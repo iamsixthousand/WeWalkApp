@@ -1,0 +1,43 @@
+.PageLink {
+    color: #2C2C30;
+    margin-right: 3vw;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+.PageLink:hover {
+    color: #51515a; 
+}
+
+.ActivePageLink {
+    font-weight: 500;   
+}
+
+.Links {
+    margin-left: 100px;
+    position: absolute;
+}
+
+.LinkContainer {
+    display: flex;
+}
+
+@media screen and (max-width: 1500px) {
+    .PageLink {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .PageLink {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .PageLink {
+        font-size: 0.81rem;
+    }
+}

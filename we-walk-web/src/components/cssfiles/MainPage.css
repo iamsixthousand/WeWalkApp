@@ -1,0 +1,106 @@
+.PageContainer {
+    padding-top: 7%;
+    height: 700px;
+}
+
+.PageContainer {
+    padding-top: 7%;
+}
+.MainPageNet {
+    
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.ImageStrokeTop{
+    position: absolute;
+    left: 17%;
+    width: 80%;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.Phrase{
+    font-size: 4.7rem;
+    font-weight: 300;
+    pointer-events: none;
+    width: 50%;
+    margin: 17vh 9%;
+    color: #2C2C30;
+}
+
+.GoButton {
+    position: absolute;
+    left: 10%;
+    padding: 0;
+    margin: 45vh -1%;
+    border-radius: 3%/10%;
+    border-width: 0;
+    background-color: #97CBD1;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(163, 154, 154, 0.25), 0 10px 10px rgba(194, 188, 188, 0.22);
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.GoButton:hover {
+    transform: scale(1.05);
+     
+}
+
+.Link {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    
+}
+
+@media screen and (max-width: 1700px){ 
+
+    .Phrase{
+        font-size: 4.3rem;
+    }
+}
+
+@media screen and (max-width: 1600px){ 
+    .PageContainer {
+        padding-top: 10%;
+    }
+
+    .Phrase{
+        font-size: 3.9rem;
+    }
+}
+
+@media screen and (max-width: 1400px){ 
+    .PageContainer {
+        padding-top: 10%;
+        
+    }
+
+    .Phrase{
+        font-size: 3.4rem;
+    }
+}
+
+
+@media screen and (max-width: 1200px){ 
+    .PageContainer {
+        padding-top: 15%;
+        
+    }
+
+    .GoButton {
+        margin-top: 250px;
+    }
+
+    .Phrase{
+        margin: 7vh 9%;
+        font-size: 2.5rem;
+    }
+}

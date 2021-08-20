@@ -1,0 +1,133 @@
+.PlacesBox {
+    padding-top: 15vh;
+    min-height: 700px;
+}
+
+.loadingImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+.PlacesControlPanel{
+    display:flex;
+    position: fixed;
+    height:100px;
+    width: 100%;
+    z-index: 3;
+    background-color: #F2F2F7;
+    opacity: 0.9;
+    min-width:  920px;
+}
+.PlacesControlPanelCenter {
+    width: 80%;
+    padding-left: 10%;
+    display:flex;
+}
+
+.PlacesElemContainer{
+    margin-top: 120px;
+}
+
+.PlacesElemContainer2 {
+    margin-top: 50px;
+}
+
+.Filter {
+    border-radius: 4%;
+    border-color: none;
+
+    display:flex;
+    padding-left: auto;
+    font-size: 1.2rem;
+    
+    height:100%;
+}
+
+.LinkTo {
+    display: flex;
+    flex-direction: row;
+    color: #97CBD1;
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1.5rem;
+    padding: 60px 10px 0 10px;
+    justify-content: flex-end;
+    
+}
+
+.LinkBack {
+    color: #97CBD1;
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1.5rem;
+    padding: 0px 10px 0 10px;
+    cursor: pointer;
+    
+}
+
+.LinkTo :visited {
+    color: #97CBD1;
+    text-decoration: none;
+    opacity: 1;
+    
+}
+
+.LinkTo :hover{
+    opacity: 1;
+}
+
+.FilterTitle{
+    padding-top: 10px;
+    font-size: 20px;
+    width:100px
+}
+
+.FilterRadio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.FilterRadio2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    justify-content: top;
+}
+
+
+.RadioContainer {
+    display:flex;
+    flex-direction: row;
+}
+
+label {
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+}
+.FilterCheckbox :checked{
+color: cyan;
+background-color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*MEDIA SCREEN*/
+
+@media screen and (max-width: 1200px){ 
+    .LinkTo {
+    
+        font-size: 1rem;
+        
+    }
+}
+
+ 
+

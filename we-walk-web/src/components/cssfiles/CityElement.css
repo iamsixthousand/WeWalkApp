@@ -1,0 +1,54 @@
+.CityElement {
+    background-position: center center;
+    display:flex;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(163, 154, 154, 0.25), 0 10px 10px rgba(194, 188, 188, 0.22);
+  
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.8;
+    transition: opacity 0.7s linear;
+    transition: all .3s linear ;
+    z-index: 0;      
+}
+
+.CityElement:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    z-index: 4;
+        
+}
+
+.CityName {
+    
+    font-size: 45px;
+    color: #020303;
+    text-shadow: 0 1px 3px;
+    overflow-x: hidden;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+
+.CityElementLink {
+    text-decoration: none;
+    background-position: center center;
+    display:flex;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(163, 154, 154, 0.25), 0 10px 10px rgba(194, 188, 188, 0.22);
+  
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.8;
+    transition: opacity 0.7s linear;
+    transition: all .3s linear ;  
+    z-index: 0;     
+}

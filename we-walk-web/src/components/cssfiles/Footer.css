@@ -1,0 +1,22 @@
+.FooterBar{
+    margin-top: 5%;
+    width:100%;
+    height:300px;
+    border-top: solid;
+    border-color: grey;
+}
+
+.LogoFooter {
+    padding-top: 2%;
+    font-size: 3.75rem;
+    margin-left: 8.7%;
+    margin-right: 0vw;
+    color: #97CBD1;
+    width: 27%;
+    pointer-events: none;
+}
+
+.LinksFooter {
+    margin-left: 8.7%;
+    padding-top: 40px;
+}

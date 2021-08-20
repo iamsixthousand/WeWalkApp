@@ -1,0 +1,49 @@
+.ToolbarHeader {
+    height: 15%;
+    position: relative;
+    margin: 2% 0 2% 0;
+}
+
+.AppBar {
+    box-shadow: none;
+}
+
+.Profile {
+    position: absolute;
+    border-color: red;
+}
+
+.AuthButtons {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.Logo {
+    font-size: 3.75rem;
+    margin-left: 8.5%;
+    margin-right: 0vw;
+    color: #97CBD1;
+    width: 27%;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1600px){ 
+    .Logo {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1200px){ 
+    .Logo {
+        font-size: 2.5rem;
+    } 
+}
+
+@media screen and (max-width: 800px){ 
+    .Logo {
+        font-size: 2rem;
+    }
+}
+
+

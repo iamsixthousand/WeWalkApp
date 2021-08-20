@@ -1,0 +1,31 @@
+@font-face {
+  font-family:'SF Pro Display';
+  font-style:normal;
+  font-weight:300;
+  src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: 'SF Pro Display',
+    sans-serif  !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 900px;
+  max-width: 100%;
+  background-color: #F2F2F7  !important;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  max-width: 100%;
+}
+
+input[type='checkox'] :checked{
+  color:red !important;
+}
