@@ -32,14 +32,14 @@ class Favourites extends React.PureComponent {
             return (
                 <div className="PlacesBox">
                     <div>
-                        <img className='loadingImg' src={loadingImg} alt='data-loading-img' />
+                        <img id='loadingImg' className='loadingImg' src={loadingImg} alt='data-loading-img' />
                     </div>
                 </div>
             );
 
         if (this.props.places.status === 2)
             return (
-                <div className="PlacesBox">
+                <div id='errorDiv' className="PlacesBox">
                     <div>
                         Ошибка загрузки данных!
                     </div>
@@ -70,7 +70,7 @@ class Favourites extends React.PureComponent {
                 })
                 return (
                     <>
-                        <div className="PlacesBox">
+                        <div id='renderDiv' className="PlacesBox">
                             <div className='PlacesControlPanelCenter'>
                                 <BackButtonFav />
                             </div>

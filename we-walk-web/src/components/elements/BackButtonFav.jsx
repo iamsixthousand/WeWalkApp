@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { notFavPageSelectedAC } from '../../redux/favouritesAC'
 import PropTypes from 'prop-types'
 
-class BackButtonFav extends React.Component {
+class BackButtonFav extends React.PureComponent {
 
     static propTypes = {
         page: PropTypes.bool.isRequired //for fav page

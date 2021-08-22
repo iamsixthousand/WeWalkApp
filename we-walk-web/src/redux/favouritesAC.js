@@ -17,14 +17,14 @@ const favouriteDeleteAC = function (favourites) { //--
     };
 }
 
-const favPageSelectedAC = function (isOnFavPage) { //--
+const favPageSelectedAC = function (isOnFavPage) { //
     return {
         type: FAV_PAGE_SELECTED,
         isOnFavPage: isOnFavPage,
     };
 }
 
-const notFavPageSelectedAC = function (isOnFavPage) { //--
+const notFavPageSelectedAC = function (isOnFavPage) { //
     return {
         type: NOT_FAV_PAGE_SELECTED,
         isOnFavPage: isOnFavPage,

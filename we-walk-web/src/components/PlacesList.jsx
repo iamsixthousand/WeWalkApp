@@ -20,7 +20,7 @@ class PlacesList extends React.PureComponent {
     };
 
     state = {
-        data: this.props.places,
+       
         page: 'PlacesListPage'
     }
 
@@ -30,18 +30,6 @@ class PlacesList extends React.PureComponent {
 
     componentDidUpdate() {
         console.log(this.props.filtered.filtered)
-    }
-    // в пропсах получу массив данных о местах через AJAX
-    // метод HIDE
-    // метод FAVOURITE
-    // метод FILTER
-    // метод RENDER FAVOURITES
-    hidePlace() {
-
-    }
-
-    favouritePlace() {
-
     }
 
     render() {
@@ -93,7 +81,7 @@ class PlacesList extends React.PureComponent {
             console.log(cityPlaces);
             placesElements.push(cityPlaces.map(place => {
                 return (
-                    <PlaceElement  realpage={this.props.page} page={this.state.page} place={place} key={place.image + 'key'} />
+                    <PlaceElement realpage={this.props.page} page={this.state.page} place={place} key={place.image + 'key'} />
                 )
             })
             )
@@ -158,17 +146,18 @@ class PlacesList extends React.PureComponent {
 
         return (
             <>
-            {!this.props.page && <div className="PlacesBox">
-                <div className='PlacesControlPanel'>
-                    <div className='PlacesControlPanelCenter'>
-                        <FilterComp disableButton={this.props.filtered.filtered.indexOf('none') ? false : true} />
-                        <PlacesControlLinks />
-                    </div>
-                </div>
-                <div className='PlacesElemContainer'>
-                    {placesElements}
-                </div>
-            </div >}
+                {!this.props.page &&
+                    <div id='filter' className="PlacesBox">
+                        <div className='PlacesControlPanel'>
+                            <div className='PlacesControlPanelCenter'>
+                                <FilterComp disableButton={this.props.filtered.filtered.indexOf('none') ? false : true} />
+                                <PlacesControlLinks />
+                            </div>
+                        </div>
+                        <div className='PlacesElemContainer'>
+                            {placesElements}
+                        </div>
+                    </div >}
             </>
         )
     }
@@ -177,8 +166,8 @@ const mapStateToProps = function (state) {
     return {
         filtered: state.filtered,
         page: state.favourites.isOnFavPage,
-        
-        
+
+
     };
 };
 
