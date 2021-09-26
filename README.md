@@ -24,3 +24,23 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Собирает проэкт в папку `build`\
 Делает продакшн бандлы и оптимизирует приложение.
 
+### Запуск приложения при помощи Docker
+
+#### Сборка образов
+
+```bash
+docker build -t db:v1.0 -f json-server.Dockerfile .
+docker build -t app:v1.0 -f app.Dockerfile .
+```
+
+### Запуск контейнеров
+
+```bash
+docker run --name db -d -p 8000:8000 db:v1.0
+docker run --name app -d -p 3000:3000 app:v1.0
+```
+
+### Запуск приложения при помощи Docker Compose
+```bash
+$ docker compose up
+```

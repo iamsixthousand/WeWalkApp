@@ -1,0 +1,20 @@
+---
+
+version: '3'
+
+services:
+  json-db:
+    build:
+      context: .
+      dockerfile: ./json-server.Dockerfile
+    ports:
+      - 8000:8000
+
+  app:
+    build:
+      context: .
+      dockerfile: ./app.Dockerfile
+    ports:
+      - 3000:3000
+    depends_on:
+      - json-db
